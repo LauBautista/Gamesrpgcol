@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+  </head>
+    <script>
+    
+        document.getElementById('email').addEventListener('input', function() {
+    campo = event.target;
+    valido = document.getElementById('emailOK');
+        
+    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    //Se muestra un texto a modo de ejemplo, luego va a ser un icono
+    if (emailRegex.test(campo.value)) {
+      valido.innerText = "válido";
+    } else {
+      valido.innerText = "incorrecto";
+    }
+});
+    
+    
+    </script>
+  <body  style=" background-image: url(img/back.jpg);">
+    <div class="contenedor">
+
+      <header>
+        <h1 class="title">Odisea - Inicio</h1>
+        <a href="">Registrate</a>
+      </header>
+      <div class="login">
+        <article class="fondo">
+          <img src="img/xbox.png" alt="User">
+          <h3>Inicio de Sesión</h3>
+          <form class="" action="index.html" method="post">
+            <span class="icon-user"></span><input class="inp" type="email"  id="email" name="user" value=""><br>
+                <span id="emailOK"></span>
+            <span class="icon-key"></span><input class="inp" type="password" name="pass" value=""><br>
+            <a href="index2.html" class="he">Entrar</a>
+            <input class="boton" type="submit" name="inicio" value="Validar">
+          </form>
+        </article>
+      </div>
+
+    </div>
+      <footer>
+<div id="footer-wrapper">
+<div class="footer-limit" id="footer-limit">
+<div class="footer no-items section" id="footer-1"></div>
+</div>
+</div>
+<!-- Footer social start -->
+<div id="sosmedup">
+<div class="footer-social section" id="Postwidegt2" name="Footer Social Links"><div class="widget LinkList" data-version="1" id="LinkList100">
+<div class="widget-content">
+<ul>
+<li><a href="https://www.facebook.com/" rel="nofollow noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+<li><a href="https://www.instagram.com" rel="nofollow noopener" target="_blank"><i id="instagram" class="fa fa-instagram"></i></a></li>
+<li><a href="https://www.youtube.com/" rel="nofollow noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+<li><a href="https://twitter.com/" rel="nofollow noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.blogger.com/follow.g?view=FOLLOW&amp;blogID=2890810791308488435" rel="nofollow noopener" target="_blank" title="Follow us on Blogger"><i class="fa fa-user"></i></a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<!-- Footer social end -->
+<!-- Footer menu start -->
+<div class="footmenu">
+<div class="footer-menu section" id="Postwidegt3" name="Footer Menu"><div class="widget LinkList" data-version="1" id="LinkList101">
+<div class="widget-content">
+<ul>
+<li><a href="#" rel="nofollow" title="About">About</a></li>
+<li><a href="#" rel="nofollow" title="Contact">Contact</a></li>
+<li><a href="#" rel="nofollow" title="Disclaimer">Disclaimer</a></li>
+<li><a href="#" rel="nofollow" title="Privacy Policy">Privacy Policy</a></li>
+<li><a href="/p/lorem-ipsum-dolor-sit-amet-consectetur.html" rel="nofollow" title="Static">Static</a></li>
+<li><a href="/error-pages.html" rel="nofollow" title="Error 404">Error 404</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<!-- Footer menu end -->
+<!-- Footer credit start -->
+<div class="credit-wrapper"><div class="creditfooter">
+Copyright © 2020 <a href="https://labibliadice.xyz/" title="La Biblia Dice"></a>. All Rights Reserved.
+</div>
+</div>
+<!-- Footer credit end -->
+</footer>
+  </body>
+</html>
